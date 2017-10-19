@@ -4,43 +4,43 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>NYTimes</title> 
-        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-        <!-- <link rel=StyleSheet href="normalize.css" type="text/css" media=screen>      -->
-        <link href="build/css/styles.css" type="text/css" rel="stylesheet"/>
+        <!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+        <link href="style.css" type="text/css" rel="stylesheet"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        
     </head>
   <body>
-<!-- WRAPPER -->
+
 <article class="wrapper wrapper-gallery">
-<!-- ICON -->
-   <div class="icon"><img src="images/nyt-logo.svg" class="click"></div>
-<!-- SELECTION -->
+
+   <div class="icn"><img src="images/nyt-logo.svg" class="click"></div>
+
    <div class="selection">
-    <form>
-      <input text="stuff">
+    <form class="search-form" action="#" method="post">
+      <div class="search-form-inner">
+        <p>Choose a section:</p>
+          <select name="sections" id="menu">
+            <option value="">Sections ...</option>
+            <option value="home">Home</option>
+            <option value="arts">Arts</option>
+            <option value="business">Business</option>
+            <option value="sports">Sports</option>
+            <option value="technology">Technology</option>
+            <option value="fashion">Fashion</option>
+          </select>
+      </div>
     </form>
+
   </div>
-<!-- GALLERY -->
-  <div class="gallery hide">
-  <div class="card hide"></div> 
-  <div class="card hide"></div>   
-  <div class="card hide"></div>  
-  <div class="card hide"></div>  
-  <div class="card hide"></div>  
-  <div class="card hide"></div>  
-  <div class="card hide"></div>  
-  <div class="card hide"></div>  
-  
-  
-  
+  <ul></ul>
+    <p>12 boxes</p>
   </div>  
-<!-- COPYRIGHT -->
+
   <div class="copyright">Copyright</div>
 
-<!-- CLOSING DIVS / SCRIPTS -->
+
 </article>
-  <script src="jquery-3.2.1.min.js"></script>
+  <!-- <script src="jquery-3.2.1.min.js"></script> -->
   <script src="build/js/scripts.min.js"></script>  
   </body>
   </html>
