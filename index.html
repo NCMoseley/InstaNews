@@ -11,17 +11,18 @@
     </head>
   <body>
 
+  <section class="total">
+    <div class="header">
 
-  <div class=header>
-
-      <div class="icon"><img src="images/nyt-logo.svg" class="nyt">
-      </div>
+      <div class="icon"><img src="images/nyt-logo.svg" class="nyt"></div>
+      
   
      <div class="selection">
+
       <form class="search-form" action="#" method="post">
         <div class="search-form-inner">
-          <p>Choose a section:</p>
-           <select name="sections" id="menu">
+           <p>Choose a section:</p>
+            <select name="sections" id="menu">
             <option value="">Sections ...</option>
             <option value="home">Home</option>
             <option value="arts">Arts</option>
@@ -29,16 +30,24 @@
             <option value="sports">Sports</option>
             <option value="technology">Technology</option>
             <option value="fashion">Fashion</option>
-           </select>
+            </select>
         </div>
       </form>
+    </div>
   </div>
-  
+  </section>
 
-    <article class="headlines">
+    <article class="headlineswrapper">
+      <div class=headlines></div>
+      <img src="images/ajax-loader.gif" alt="Loading..." class="loading" />
     </article>
 
-    <div class="copyright">Copyright2017</div>
+    <footer class="footer">
+      <div class="copyright">
+        <p>&copy; Copyright 2016 <span>Instanews</span></p>
+     </div>
+   </footer>
+
   <!-- <script src="jquery-3.2.1.min.js"></script> -->
   <script src="build/js/scripts.min.js"></script>  
   </body>

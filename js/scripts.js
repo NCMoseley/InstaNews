@@ -15,7 +15,7 @@ $.ajax({
 })
 .done(function(data) {
   $('.headlines').empty();
-  for(var i = 0; i <= 11; i++) {
+  for(var i = 0; i <= 12; i++) {
   var title = data.results[i].abstract
   var image = data.results[i].multimedia[4].url
   var url = data.results[i].url
