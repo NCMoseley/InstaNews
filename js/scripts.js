@@ -13,19 +13,17 @@ $.ajax({
   url: url,
   method: 'GET',
 })
-
 .done(function(data) {
-  for(var i = 0; i < 12; i++) {
-  var title = data.results[i].abstract,
-      image = data.results[i].multimedia[2].url
-      console.log(title);
-  $('ul').append('<li>' + title + '<img src="' + image + '">' + '</li>');
-  // $('ul').append('<li>' + title + '<img src="' + image + '">' + '</li>');
-  }  
+  $('.headlines').empty();
+  for(var i = 0; i <= 11; i++) {
+  var title = data.results[i].abstract
+  var image = data.results[i].multimedia[4].url
+  var url = data.results[i].url
+  console.log(title);
+  $('.headlines').append('<a style="background-image: url(' + image + ')" href="' + url + '"' + '>'  + '<div class="list-image">' + title + '</div></a>');
+  }
   
-
-
-  console.log(data);
+  console.log(data);  
 })
 
 
