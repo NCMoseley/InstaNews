@@ -92,3 +92,9 @@
 
 // })(jQuery);
 
+// $(".gif").css({
+//           display: "inline",
+//           Position: "absolute",
+//           "animation-name": "gif",
+//           "animation-duration": "2s"
+//         }),
