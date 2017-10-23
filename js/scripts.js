@@ -53,6 +53,7 @@
 
             $('.headlines').append(z)
           })
+<<<<<<< HEAD
         //   .fail(function(error){
         //     console.log("text");
         //     // throw error;
@@ -67,6 +68,11 @@
 
           //   $('.headlines').append('<h3>Sorry! There was a problem, please try again!</h3>');
           
+=======
+
+          console.log("text", test());
+
+>>>>>>> cbc15011f895a9f8684ed1776be30855fe52cd8b
         })
       })
        
