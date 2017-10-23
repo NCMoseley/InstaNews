@@ -142,10 +142,6 @@
   $medium-width: 600px;
   $mobile-width: 100px;
   $fontcolor: #fff;
-  * {
-    // box-sizing: border-box;
-  }
-
   body {
     background-color: $background-colour;
     flex-direction: column;
@@ -219,7 +215,6 @@
     padding: 1rem;
     padding-bottom: 20rem;
     text-align: center;
-    
   }
 
   @keyframes fadeout {

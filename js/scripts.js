@@ -29,9 +29,6 @@
             $(".gif").css("display", "inline");
         }
       })
-     
-         
-
 
         .done(function (data) {
           $('.headlines').empty()
@@ -73,5 +70,5 @@
     
   })(jQuery);
 
-// alert( "error" );
+
   
