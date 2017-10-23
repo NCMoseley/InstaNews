@@ -1,3 +1,27 @@
+@media (max-width: 600px) {
+  #header.header {
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    padding: 3rem 0 3rem 0;
+    margin: 1px 1px 1px 1px;
+    transition: all 1s ease-out .3s;
+  }
+  .nyt {
+    height: auto;
+    width: 80%;
+    max-width: 250px;
+    transition: all 1s ease-out .3s;
+    opacity: .5;
+  }
+  .nyt:hover {
+    opacity: 1;
+  }
+}
+
 @media (min-width: 480px) {
   .headlines {
     display: inline-flex;
