@@ -752,13 +752,7 @@ a:hover {
   font-size: 1rem;
   padding: .5rem;
   width: 100%;
-  position: relative;
-  -webkit-transition: all .5s ease-out 0s;
-  transition: all .5s ease-out 0s;
-  opacity: .0; }
-
-.titlebg:hover {
-  opacity: 1; }
+  position: relative; }
 
 .list-title {
   text-decoration: none;
@@ -861,6 +855,12 @@ h3 {
     -webkit-transition: all 1s ease-out .3s;
     transition: all 1s ease-out .3s; }
   .nyt:hover {
+    opacity: 1; }
+  .titlebg {
+    -webkit-transition: all .5s ease-out 0s;
+    transition: all .5s ease-out 0s;
+    opacity: .0; }
+  .titlebg:hover {
     opacity: 1; }
   h3 {
     padding: 1rem;

@@ -63,6 +63,14 @@ h3 {
   .nyt:hover {
     opacity: 1;
   }
+.titlebg {
+  transition: all .5s ease-out 0s;
+  opacity: .0;
+}
+
+.titlebg:hover {
+  opacity: 1;
+}
   h3 {
     padding: 1rem;
     padding-bottom: 7rem;
