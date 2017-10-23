@@ -40,7 +40,7 @@
 
         $.each(test(), function (index, value) {
           var imglink = '';
-          imglink = value.multimedia[4].url;
+          imglink = value.multimedia[value.multimedia.length - 1].url;
 
           var c = value.url
 
@@ -61,6 +61,22 @@
 
   })
 
+  $('select').selectric();
+
+
+  $('#menu').selectric();
+
+$('#bt_add_val').click(function() {
+  // Store the value in a variable
+  var value = $('#add_val').val();
+
+  // Append to original select
+  $('#menu').append('<option>' + (value ? value : 'Empty') + '</option>');
+
+  // Refresh Selectric
+  $('#menu').selectric('refresh');
+
+});
 })(jQuery);
 
 

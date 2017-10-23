@@ -8,10 +8,10 @@ This page is optimized to run on most modern browsers.
 
 This page was built using technology including:
 
-CSS
-SASS
-jQuery
-Gulp
+CSS,  
+SASS,  
+jQuery,  
+Gulp,  
 
 API information and logo provided by New York Times. All rights reserved. 
 
