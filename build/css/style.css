@@ -807,13 +807,11 @@ h3 {
     max-width: 250px;
     margin-left: 100px;
     padding: 3rem;
-    -webkit-transition: all .5s ease-out .3s;
-    transition: all .5s ease-out .3s; }
+    -webkit-transition: all 1.5s ease 0s;
+    transition: all 1.5s ease 0s; }
   .nyt {
     width: 20vw;
     height: auto;
-    -webkit-transition: all .5s ease-out .3s;
-    transition: all .5s ease-out .3s;
     opacity: .5; }
   .nyt:hover {
     opacity: 1; }

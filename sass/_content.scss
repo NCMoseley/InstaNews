@@ -296,7 +296,6 @@
     animation: bounce 1s;
     }
     
-
   .titlebg {
     background: rgba(0, 0, 0, .6);
     bottom: 0;
@@ -363,12 +362,11 @@
       max-width: 250px;
       margin-left: 100px;
       padding: 3rem;
-      transition: all .5s ease-out .3s;
+      transition: all 1.5s ease 0s;
     }
     .nyt {
       width: 20vw;
       height: auto;
-      transition: all .5s ease-out .3s;
       opacity: .5;
     }
     .nyt:hover {
