@@ -568,7 +568,10 @@ body {
     width: 80%;
     max-width: 250px;
     -webkit-transition: all 1s ease-out .3s;
-    transition: all 1s ease-out .3s; } }
+    transition: all 1s ease-out .3s;
+    opacity: .5; }
+  .nyt:hover {
+    opacity: 1; } }
 
 .header {
   display: -webkit-box;
@@ -603,7 +606,13 @@ body {
   -ms-flex-line-pack: center;
       align-content: center;
   font-size: .9rem;
-  padding-top: 1rem; }
+  padding-top: 1rem;
+  -webkit-transition: all 1s ease-out .3s;
+  transition: all 1s ease-out .3s;
+  opacity: .5; }
+
+#selection:hover {
+  opacity: 1; }
 
 .form-inside {
   -webkit-box-pack: center;
@@ -669,6 +678,28 @@ h3 {
   color: #fff;
   min-width: 100vw; }
 
+@-webkit-keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px); }
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px); } }
+
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px); }
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px); } }
+
 a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -683,7 +714,13 @@ a {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 50%;
           flex: 1 0 50%;
-  font-size: 1rem; }
+  font-size: 1rem;
+  -webkit-transition: all 1s ease-out .0s;
+  transition: all 1s ease-out .0s; }
+
+a:hover {
+  -webkit-animation: bounce 1s;
+          animation: bounce 1s; }
 
 .titlebg {
   background: rgba(0, 0, 0, 0.6);
@@ -702,7 +739,13 @@ a {
   font-size: 1rem;
   padding: .5rem;
   width: 100%;
-  position: relative; }
+  position: relative;
+  -webkit-transition: all 1s ease-out .0s;
+  transition: all 1s ease-out .0s;
+  opacity: .5; }
+
+.titlebg:hover {
+  opacity: 1; }
 
 .list-title {
   text-decoration: none;
@@ -770,7 +813,10 @@ h3 {
     width: 20vw;
     height: auto;
     -webkit-transition: all .5s ease-out .3s;
-    transition: all .5s ease-out .3s; }
+    transition: all .5s ease-out .3s;
+    opacity: .5; }
+  .nyt:hover {
+    opacity: 1; }
   h3 {
     padding: 1rem;
     padding-bottom: 7rem;
