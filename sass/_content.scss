@@ -97,9 +97,9 @@ h3 {
 }
 
 @keyframes bounce {
-  0%,
-  20%,
-  60%,
+    0%,
+    20%,
+    60%,
   100% {
     transform: translateY(0);
   }
@@ -139,8 +139,8 @@ a:hover {
   padding: .5rem;
   width: 100%;
   position: relative;
-  transition: all 1s ease-out .0s;
-  opacity: .5;
+  transition: all .5s ease-out 0s;
+  opacity: .0;
 }
 
 .titlebg:hover {
