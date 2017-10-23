@@ -22,11 +22,11 @@ var gulp = require('gulp');
    });
 
 gulp.task('scripts',['lint'], function(){
-  gulp.src('./js/*.js') // What files do we want gulp to consume?
-    .pipe(uglify()) // Call the uglify function on these files
-    .pipe(rename({ extname: '.min.js' })) // Rename the uglified file
+  gulp.src('./js/*.js') 
+    .pipe(uglify()) 
+    .pipe(rename({ extname: '.min.js' })) 
     .pipe(gulp.dest('./build/js'))
-     // Where do we put the result?
+     
 });
 
 gulp.task('say_hello', function(){

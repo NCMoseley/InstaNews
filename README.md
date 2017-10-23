@@ -27,13 +27,7 @@ normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css
 
 JQuery library hosted by our Google. 
 
-
-
-
-
-
-
-
+Various animations inspired by and based from different sources around the web.
 
 ```
 
