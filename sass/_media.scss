@@ -58,6 +58,7 @@ h3 {
     width: 20vw;
     height: auto;
     opacity: .5;
+    transition: all 1s ease-out .3s;
   }
   .nyt:hover {
     opacity: 1;

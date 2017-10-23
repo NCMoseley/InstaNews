@@ -571,8 +571,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   font-size: .9rem;
   padding-top: 1rem;
   -webkit-transition: all 1s ease-out .3s;
@@ -581,6 +582,44 @@ body {
 
 #selection:hover {
   opacity: 1; }
+
+@-webkit-keyframes appear {
+  0%,
+  20%,
+  60%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px); }
+  80% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px); } }
+
+@keyframes appear {
+  0%,
+  20%,
+  60%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px); }
+  80% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px); } }
+
+#add_val {
+  background: black;
+  color: #fff;
+  -webkit-transition: all 1s ease-out .0s;
+  transition: all 1s ease-out .0s; }
+
+#add_val:hover {
+  -webkit-animation: appear 1s;
+          animation: appear 1s; }
 
 .form-inside {
   -webkit-box-pack: center;
@@ -818,7 +857,9 @@ h3 {
   .nyt {
     width: 20vw;
     height: auto;
-    opacity: .5; }
+    opacity: .5;
+    -webkit-transition: all 1s ease-out .3s;
+    transition: all 1s ease-out .3s; }
   .nyt:hover {
     opacity: 1; }
   h3 {
@@ -866,7 +907,7 @@ h3 {
 
 .selectric {
   border: 1px solid #DDD;
-  border-radius: 0px;
+  border-radius: 5px;
   background: #F8F8F8;
   position: relative;
   overflow: hidden; }
@@ -892,7 +933,7 @@ h3 {
     width: 38px;
     height: 38px;
     line-height: 38px;
-    background-color: #F8f8f8;
+    background-color: #faf6f6;
     color: #BBB;
     text-align: center;
     font: 0/0 a;

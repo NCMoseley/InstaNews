@@ -28,7 +28,7 @@ body {
   width: 200px;
   height: 50px;
   justify-content: center;
-  align-content: center;
+  align-items: flex-end;
   font-size: .9rem;
   padding-top: 1rem;
   transition: all 1s ease-out .3s;
@@ -37,6 +37,31 @@ body {
 
 #selection:hover {
   opacity: 1;
+}
+
+@keyframes appear {
+    0%,
+    20%,
+    60%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-5px);
+  }
+  80% {
+    transform: translateY(-2px);
+  }
+}
+
+#add_val {
+  background: rgb(0, 0, 0);
+  color: $fontcolor;
+  transition: all 1s ease-out .0s;
+}
+
+#add_val:hover {
+  animation: appear 1s;
 }
 
 .form-inside {
