@@ -1,77 +1,153 @@
-  html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
 
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  section {
+    display: block;
+  }
 
-/* END RESET */
-  
-  
-  
+  body {
+    line-height: 1;
+  }
+
+  ol,
+  ul {
+    list-style: none;
+  }
+
+  blockquote,
+  q {
+    quotes: none;
+  }
+
+  blockquote:before,
+  blockquote:after,
+  q:before,
+  q:after {
+    content: '';
+    content: none;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  /* END RESET */
+
   @font-face {
     font-family: 'open_sanslight';
     src: url('../../fontsfonts/opensans-light-webfont.eot');
-    src: url('../../fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/opensans-light-webfont.woff2') format('woff2'),
-         url('../../fonts/opensans-light-webfont.woff') format('woff'),
-         url('../../fonts/opensans-light-webfont.ttf') format('truetype'),
-         url('../../fonts/opensans-light-webfont.svg#open_sanslight') format('svg');
+    src: url('../../fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/opensans-light-webfont.woff2') format('woff2'), url('../../fonts/opensans-light-webfont.woff') format('woff'), url('../../fonts/opensans-light-webfont.ttf') format('truetype'), url('../../fonts/opensans-light-webfont.svg#open_sanslight') format('svg');
     font-weight: normal;
     font-style: normal;
+  }
 
-}
-  
   $background-colour: #000;
   $desktop-width: 1000px;
   $medium-width: 600px;
   $mobile-width: 100px;
   $fontcolor: #fff;
-
-
   * {
     // box-sizing: border-box;
   }
 
   body {
-    background-color: $background-colour; 
+    background-color: $background-colour;
     flex-direction: column;
     justify-content: space-between;
     flex-basis: content;
@@ -95,7 +171,6 @@ table {
       margin: 1px 1px 1px 1px;
       transition: all 1s ease-out .3s;
     }
-
     .nyt {
       height: auto;
       width: 80%;
@@ -123,32 +198,53 @@ table {
     justify-content: center;
     align-content: center;
     font-size: .9rem;
+    padding-top: 1rem;
   }
 
   .form-inside {
     justify-content: center;
     text-align: center;
-    
     p {
-    font-family: 'open_sanslight';
-    width: 150px;
-    text-align: center;
+      font-family: 'open_sanslight';
+      width: 150px;
+      text-align: center;
     }
   }
 
   .form {
-    height: 50px;
+    height: 75px;
+  }
+
+  h3 {
+    padding: 1rem;
+    padding-bottom: 20rem;
+    text-align: center;
+    
+  }
+
+  @keyframes fadeout {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: .3;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 
   .gif {
     display: none;
     position: absolute;
-    top: 75%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50px;
-    height: 50px;
+    width: 90px;
+    height: 90px;
     z-index: -1;
+    animation: 1s linear 1s fadeout;
+    animation-iteration-count: infinite;
   }
 
   .headlineswrapper {
@@ -219,6 +315,13 @@ table {
     }
   }
 
+  h3 {
+    padding: 1rem;
+    padding-bottom: 7rem;
+    text-align: center;
+    margin: auto;
+  }
+
   @media (min-width: $medium-width) {
     .header {
       display: flex;
@@ -234,26 +337,11 @@ table {
       width: 20vw;
       height: auto;
       transition: all .5s ease-out .3s;
-      
     }
-    #selection {
-      // display: flex;
-      // background-color: $background-colour;
-      // color: $fontcolor;
-      // width: 200px;
-      // height: 100px;
-      // justify-content: space-around;
-      // align-content: center;
-    }
-    .selection p {
-      //  align-self: center;
-    }
-    .headlineswrapper {
-      // display: flex;
-      // flex-flow: row wrap;
-      // flex-direction: row;
-      // flex-wrap: wrap;
-      // max-width: 100vw;
+    h3 {
+      padding: 1rem;
+      padding-bottom: 7rem;
+      text-align: center;
     }
     .footer {
       justify-content: center;

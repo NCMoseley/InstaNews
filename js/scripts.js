@@ -11,10 +11,6 @@
            width:  "35%"
         }),
 
-        $(".gif").css({
-          display: "inline"
-        }),
-
         $("#header").css({
           "align-items": "center",
           flex: "1 0 auto",
@@ -28,10 +24,19 @@
       $.ajax({
         url: url,
         method: 'GET',
+          success: function (d) {
+            // replace div's content with returned data
+            $(".gif").css("display", "inline");
+        }
       })
+     
+         
+
 
         .done(function (data) {
-          $('.headlines').empty();
+          $('.headlines').empty()
+            
+             
 
           function test() {
             return data.results.filter(function (item) {
@@ -53,29 +58,20 @@
 
             $('.headlines').append(z)
           })
-<<<<<<< HEAD
-        //   .fail(function(error){
-        //     console.log("text");
-        //     // throw error;
-        //   $('.headlines').append('<h3>Sorry! There was a problem, please try again!</h3>');
-        // });
+       
           console.log("text", test())
           
-          // .fail(function() {
-          //   // $('.headlines').empty();
-          
-          //   console.log("text");
-
-          //   $('.headlines').append('<h3>Sorry! There was a problem, please try again!</h3>');
-          
-=======
-
-          console.log("text", test());
-
->>>>>>> cbc15011f895a9f8684ed1776be30855fe52cd8b
         })
+        .fail(function() {
+            $('.headlines').append('<h3>Sorry! There was a problem, please try again!</h3>')
+            alert( "Content not found; Please reload the page." );
+          })
+          
       })
-       
+      
 
-
+    
   })(jQuery);
+
+// alert( "error" );
+  
