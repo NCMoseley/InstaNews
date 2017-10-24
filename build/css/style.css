@@ -856,12 +856,6 @@ h3 {
     transition: all 1s ease-out .3s; }
   .nyt:hover {
     opacity: 1; }
-  .titlebg {
-    -webkit-transition: all .5s ease-out 0s;
-    transition: all .5s ease-out 0s;
-    opacity: .0; }
-  .titlebg:hover {
-    opacity: 1; }
   h3 {
     padding: 1rem;
     padding-bottom: 7rem;
@@ -890,6 +884,12 @@ h3 {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 25%;
             flex: 1 0 25%; }
+  .titlebg {
+    -webkit-transition: all .5s ease-out 0s;
+    transition: all .5s ease-out 0s;
+    opacity: .0; }
+  .titlebg:hover {
+    opacity: 1; }
   .footer {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
