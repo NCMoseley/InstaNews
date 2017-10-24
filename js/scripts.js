@@ -65,7 +65,7 @@
 
   $('#bt_add_val').on('click', function (e) {
     e.preventDefault();
-
+     
     var value = $('#add_val').val().toLowerCase();
 
     console.log(value);
@@ -73,7 +73,8 @@
     $('#menu').append('<option value="' + value + '">' + value + '</option>');
 
     $('#menu').selectric('refresh');
-
+    
+    $('#add_val').closest('form').find("input[type=text], textarea").val("");
 
   });
 })(jQuery);
