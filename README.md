@@ -4,6 +4,8 @@ One-page, responsive website that allows a user to filter top news story categor
 ## Introduction
 This page is optimized to run on most modern browsers. It is designed for 320px. 600px, and 1000px + screen resolutions. You can add items to the menu and adjust which topics are returned, if you desire more than the original 6. All of the articles returned are links that will take you away from the InstaTimes homepage and to the full article. 
 
+With screen sizes less than 600px, the article abstracts can be seen. Larger screen sizes than that have only the pictures shown until the mouse is hovered over. 
+
 
 ## References
 

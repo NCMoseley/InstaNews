@@ -2,7 +2,7 @@
 
   $('#menu').on('change', function () {
     var choice = $('#menu option:selected').val();
-    // $("ul").empty();
+    
 
     $(".nyt").css({
       height: "auto",
@@ -65,22 +65,16 @@
 
   $('#bt_add_val').on('click', function(e) {
       e.preventDefault();
-  // Store the value in a variable
+  
   var value = $('#add_val').val().toLowerCase();
 
   console.log(value);
 
-//   // Append to original select
-//   $('#menu').append('<option>' + (value ? value : 'Empty') + '</option>');
-//   //   $('#menu').append('<option' + 'value="' + value + '">' + value.html + '</option>');
-//     //  <option value="technology">Technology</option>
-//     newFunction($);
-    
      $('#menu').append('<option value="' + value + '">' + value + '</option>');
 
      $('#menu').selectric('refresh');
 
-    //  return false;
+  
 });
 })(jQuery);
 
