@@ -40,9 +40,9 @@ body {
 }
 
 @keyframes appear {
-    0%,
-    20%,
-    60%,
+  0%,
+  20%,
+  60%,
   100% {
     transform: translateY(0);
   }
@@ -122,9 +122,9 @@ h3 {
 }
 
 @keyframes bounce {
-    0%,
-    20%,
-    60%,
+  0%,
+  20%,
+  60%,
   100% {
     transform: translateY(0);
   }
@@ -164,7 +164,7 @@ a:hover {
   padding: .5rem;
   width: 100%;
   position: relative;
-  }
+}
 
 .list-title {
   text-decoration: none;

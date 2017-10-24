@@ -16,6 +16,10 @@ SASS,
 jQuery,  
 Gulp
 
+
+```
+
+```
 API information and logo provided by New York Times. All rights reserved. 
 
 Ajax Loader script borrowed from:
@@ -40,10 +44,12 @@ Selectric menu style: http://selectric.js.org/demo.html
 
 ```
 
-## Run Script
+##  Scripts
 
 ```
 NYT_API_KEY=<api-key>
+jQuery 3.2.1
+
 
 ```
 

@@ -2,12 +2,12 @@
 
   $('#menu').on('change', function () {
     var choice = $('#menu option:selected').val();
-    
+
 
     $(".nyt").css({
-      height: "auto",
-      width: "35%"
-    }),
+        height: "auto",
+        width: "35%"
+      }),
 
       $("#header").css({
         "align-items": "center",
@@ -19,13 +19,13 @@
 
 
     $.ajax({
-      url: url,
-      method: 'GET',
-      success: function (d) {
-        // replace div's content with returned data
-        $(".gif").css("display", "inline");
-      }
-    })
+        url: url,
+        method: 'GET',
+        success: function (d) {
+          // replace div's content with returned data
+          $(".gif").css("display", "inline");
+        }
+      })
 
       .done(function (data) {
         $('.headlines').empty()
@@ -63,20 +63,17 @@
 
   $('#menu').selectric();
 
-  $('#bt_add_val').on('click', function(e) {
-      e.preventDefault();
-  
-  var value = $('#add_val').val().toLowerCase();
+  $('#bt_add_val').on('click', function (e) {
+    e.preventDefault();
 
-  console.log(value);
+    var value = $('#add_val').val().toLowerCase();
 
-     $('#menu').append('<option value="' + value + '">' + value + '</option>');
+    console.log(value);
 
-     $('#menu').selectric('refresh');
+    $('#menu').append('<option value="' + value + '">' + value + '</option>');
 
-  
-});
+    $('#menu').selectric('refresh');
+
+
+  });
 })(jQuery);
-
-
-
