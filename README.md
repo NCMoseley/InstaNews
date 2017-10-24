@@ -38,7 +38,9 @@ Various animations inspired by and based from different sources around the web.
 
 Selectric menu style: http://selectric.js.org/demo.html
 
+## Build
 
+I implimented Gulp to automatically compile my .scss files into the final .css. This project was an opportunity to exercise a functional understanding of HTML, CSS and javascript/jquery, and use them all together in a single page. The addition of Selectric in the menu, along with the possibility of adding addition Categories to the list is my first chance to exhibit real software design. 
 
 ```
 
