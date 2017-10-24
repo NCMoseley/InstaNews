@@ -5,9 +5,9 @@
 
 
     $(".nyt").css({
-        height: "auto",
-        width: "35%"
-      }),
+      height: "auto",
+      width: "35%"
+    }),
 
       $("#header").css({
         "align-items": "center",
@@ -19,13 +19,13 @@
 
 
     $.ajax({
-        url: url,
-        method: 'GET',
-        success: function (d) {
-          // replace div's content with returned data
-          $(".gif").css("display", "inline");
-        }
-      })
+      url: url,
+      method: 'GET',
+      success: function (d) {
+        // replace div's content with returned data
+        $(".gif").css("display", "inline");
+      }
+    })
 
       .done(function (data) {
         $('.headlines').empty()
@@ -56,7 +56,7 @@
       })
       .fail(function () {
         $('.headlines').append('<h3>Sorry! There was a problem, please try again!</h3>')
-        alert("Content not found; Please reload the page.");
+        alert("Content not found; Please check that you have entered a valid category.");
       })
 
   })
@@ -65,7 +65,7 @@
 
   $('#bt_add_val').on('click', function (e) {
     e.preventDefault();
-     
+
     var value = $('#add_val').val().toLowerCase();
 
     console.log(value);
@@ -73,7 +73,7 @@
     $('#menu').append('<option value="' + value + '">' + value + '</option>');
 
     $('#menu').selectric('refresh');
-    
+
     $('#add_val').closest('form').find("input[type=text], textarea").val("");
 
   });
