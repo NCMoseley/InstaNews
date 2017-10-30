@@ -6,7 +6,11 @@ var gulp = require('gulp');
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     cssnano = require('gulp-cssnano'),
-    prettyerror = require('gulp-prettyerror');
+    prettyerror = require('gulp-prettyerror'),
+    babel = require('gulp-babel');
+
+    const input = './js/*.js';
+    const output = './js/transpiled';
 
     gulp.task('sass', function() {
       gulp.src('./sass/style.scss')
@@ -21,16 +25,12 @@ var gulp = require('gulp');
          .pipe(gulp.dest('./build/css'));
    });
 
-gulp.task('scripts',['lint'], function(){
-  gulp.src('./js/*.js') 
+gulp.task('scripts',['lint', 'babel'], function(){
+  gulp.src('./js/transpiled/*.js') 
     .pipe(uglify()) 
     .pipe(rename({ extname: '.min.js' })) 
     .pipe(gulp.dest('./build/js'))
      
-});
-
-gulp.task('say_hello', function(){
-  console.log('Herro!');
 });
 
 gulp.task('watch', function() {
@@ -39,11 +39,17 @@ gulp.task('watch', function() {
 });
 
 gulp.task('lint', function() {
-  return gulp.src(['js/*.js'])
+  return gulp.src('.js/transpiled/*.js')
   .pipe(eslint())
   .pipe(eslint.format())
   .pipe(eslint.failAfterError());
 
+});
+
+gulp.task('babel', function() {
+    return gulp.src(input)
+        .pipe(babel())
+        .pipe(gulp.dest(output));
 });
 
 gulp.task('browser-sync', function() {
@@ -57,7 +63,6 @@ gulp.task('browser-sync', function() {
   
 });
 
-gulp.task('default', ['watch','browser-sync', 'lint'] );
-
+gulp.task('default', ['watch','browser-sync','lint'] );
 
 
