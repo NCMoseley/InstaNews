@@ -11,7 +11,7 @@ With screen size less than 1000px, the article abstracts can be seen. Larger scr
 
 Many of the elements respond when the mouse is hovered over. It gives a lively dynamic feel to a relatively simple design. 
 
-![](https://github.com/NCMoseley/InstaNews/blob/master/Readmepic.png)
+![](https://github.com/NCMoseley/InstaNews/blob/master/Readmepic2.png)
 
 
 ## References
