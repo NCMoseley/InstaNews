@@ -2,6 +2,8 @@
 
 (function ($) {
 
+  var $headlines = $('.headlines');
+
   $('#menu').on('change', function () {
     var choice = $('#menu option:selected').val();
 
@@ -24,7 +26,7 @@
         $(".gif").css("display", "inline");
       }
     }).done(function (data) {
-      $('.headlines').empty();
+      $headlines.empty();
 
       function test() {
         return data.results.filter(function (item) {
@@ -43,12 +45,12 @@
 
         z = '<a style="background-image: url(' + imglink + ')" href="' + c + '"><div class="titlebg"><div class="list-title">' + value.abstract + '</div></div></a>';
 
-        $('.headlines').append(z);
+        $headlines.append(z);
       });
 
       console.log("text", test());
     }).fail(function () {
-      $('.headlines').append('<h3>Sorry! There was a problem, please try again!</h3>');
+      $headlines.append('<h3>Sorry! There was a problem, please try again!</h3>');
       alert("Content not found; Please check that you have entered a valid category.");
     });
   });

@@ -1,5 +1,7 @@
 (($ => {
 
+let $headlines = $('.headlines');
+
   $('#menu').on('change', () => {
     const choice = $('#menu option:selected').val();
 
@@ -27,7 +29,7 @@
     })
 
       .done(data => {
-        $('.headlines').empty()
+        $headlines.empty()
 
         function test() {
           return data.results.filter(item => item.multimedia.length !== 0).splice(0, 12)
@@ -44,14 +46,14 @@
 
           z = `<a style="background-image: url(${imglink})" href="${c}"><div class="titlebg"><div class="list-title">${value.abstract}</div></div></a>`
 
-          $('.headlines').append(z)
+          $headlines.append(z)
         })
 
         console.log("text", test())
 
       })
       .fail(() => {
-        $('.headlines').append('<h3>Sorry! There was a problem, please try again!</h3>')
+        $headlines.append('<h3>Sorry! There was a problem, please try again!</h3>')
         alert("Content not found; Please check that you have entered a valid category.");
       })
 

@@ -433,7 +433,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 90vh; }
+  margin: 50px; }
 
 .slctn {
   display: -webkit-inline-box;
@@ -638,7 +638,7 @@ a:hover {
   font-size: .9rem; }
 
 @media (max-width: 600px) {
-  #header.header {
+  .header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -654,9 +654,8 @@ a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 90vh;
     padding: 3rem 0 3rem 0;
-    margin: 1px 1px 1px 1px;
+    margin: 50px;
     -webkit-transition: all 1s ease-out .3s;
     transition: all 1s ease-out .3s; }
   .nyt {

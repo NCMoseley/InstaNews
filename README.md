@@ -1,3 +1,6 @@
+
+![](/main/Documents/HTML/InstaNews/images/Readmepic.png)
+
 # NYT Instanews
 One-page, responsive website that allows a user to filter top news story categories via the New York Times API.
 
@@ -28,7 +31,7 @@ https://johnveldboom.com/posts/jquery-ajax-loading-display-images-or-text-until-
 
 Open-Sans Light Font provided by Red Academy.
 
-Redundant normalize provided by:
+Normalize provided by:
 
 normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css
 
