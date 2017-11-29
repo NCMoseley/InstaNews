@@ -1,5 +1,5 @@
 
-![](/main/Documents/HTML/InstaNews/images/Readmepic.png)
+![](https://github.com/NCMoseley/InstaNews/blob/master/Readmepic.png)
 
 # NYT Instanews
 One-page, responsive website that allows a user to filter top news story categories via the New York Times API.
