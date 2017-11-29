@@ -452,8 +452,8 @@ body {
           align-items: flex-end;
   font-size: .9rem;
   padding-top: 1rem;
-  -webkit-transition: all 1s ease-out .3s;
-  transition: all 1s ease-out .3s;
+  -webkit-transition: all .2s ease-out .1s;
+  transition: all .2s ease-out .1s;
   opacity: .5; }
 
 .slctn:hover {
@@ -563,19 +563,19 @@ h3 {
 
 @-webkit-keyframes bounce {
   100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0); }
-  40% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px); } }
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  10% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); } }
 
 @keyframes bounce {
   100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0); }
-  40% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px); } }
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  10% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); } }
 
 a {
   display: -webkit-box;
@@ -591,13 +591,11 @@ a {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 50%;
           flex: 1 0 50%;
-  font-size: 1rem;
-  -webkit-transition: all 1s ease-out .0s;
-  transition: all 1s ease-out .0s; }
+  font-size: 1rem; }
 
 a:hover {
-  -webkit-animation: bounce 1s;
-          animation: bounce 1s; }
+  -webkit-animation: bounce 3s;
+          animation: bounce 3s; }
 
 .titlebg {
   background: rgba(0, 0, 0, 0.6);
@@ -662,8 +660,8 @@ a:hover {
     height: auto;
     width: 80%;
     max-width: 250px;
-    -webkit-transition: all 1s ease-out .3s;
-    transition: all 1s ease-out .3s;
+    -webkit-transition: all .2s ease-out .1s;
+    transition: all .2s ease-out .1s;
     opacity: .5; }
   .nyt:hover {
     opacity: 1; } }
@@ -715,8 +713,8 @@ h3 {
     width: 20vw;
     height: auto;
     opacity: .5;
-    -webkit-transition: all 1s ease-out .3s;
-    transition: all 1s ease-out .3s; }
+    -webkit-transition: all .2s ease-out .1s;
+    transition: all .2s ease-out .1s; }
   .nyt:hover {
     opacity: 1; }
   h3 {

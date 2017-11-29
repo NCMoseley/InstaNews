@@ -13,7 +13,7 @@
     height: auto;
     width: 80%;
     max-width: 250px;
-    transition: all 1s ease-out .3s;
+    transition: all .2s ease-out .1s;
     opacity: .5;
   }
   .nyt:hover {
@@ -57,7 +57,7 @@ h3 {
     width: 20vw;
     height: auto;
     opacity: .5;
-    transition: all 1s ease-out .3s;
+    transition: all .2s ease-out .1s;
   }
   .nyt:hover {
     opacity: 1;

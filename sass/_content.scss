@@ -31,7 +31,7 @@ body {
   align-items: flex-end;
   font-size: .9rem;
   padding-top: 1rem;
-  transition: all 1s ease-out .3s;
+  transition: all .2s ease-out .1s;
   opacity: .5;
 }
 
@@ -123,10 +123,10 @@ h3 {
 
 @keyframes bounce {
   100% {
-    transform: translateY(0);
+    transform: scale(1);
   }
-  40% {
-    transform: translateY(-10px);
+  10% {
+    transform: scale(1.2);
   }
 }
 
@@ -139,11 +139,10 @@ a {
   align-items: flex-end;
   flex: 1 0 50%;
   font-size: 1rem;
-  transition: all 1s ease-out .0s;
 }
 
 a:hover {
-  animation: bounce 1s;
+  animation: bounce 3s;
 }
 
 .titlebg {
