@@ -20,7 +20,7 @@
       url: url,
       method: 'GET',
       success: function success(d) {
-        // replace div's content with returned data
+
         $(".gif").css("display", "inline");
       }
     }).done(function (data) {

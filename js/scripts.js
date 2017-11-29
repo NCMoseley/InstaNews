@@ -3,7 +3,6 @@
   $('#menu').on('change', () => {
     const choice = $('#menu option:selected').val();
 
-
     $(".nyt").css({
       height: "auto",
       width: "35%"
@@ -22,7 +21,7 @@
       url,
       method: 'GET',
       success(d) {
-        // replace div's content with returned data
+      
         $(".gif").css("display", "inline");
       }
     })

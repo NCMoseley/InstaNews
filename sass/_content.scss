@@ -20,7 +20,7 @@ body {
   height: 90vh;
 }
 
-#selection {
+.slctn {
   display: inline-flex;
   background-color: $background-colour;
   color: $fontcolor;
@@ -35,7 +35,7 @@ body {
   opacity: .5;
 }
 
-#selection:hover {
+.slctn:hover {
   opacity: 1;
 }
 
@@ -54,13 +54,13 @@ body {
   }
 }
 
-#add_val {
+.addval {
   background: rgb(0, 0, 0);
   color: $fontcolor;
   transition: all 1s ease-out .0s;
 }
 
-#add_val:hover {
+.addval:hover {
   animation: appear 1s;
 }
 
@@ -122,16 +122,10 @@ h3 {
 }
 
 @keyframes bounce {
-  0%,
-  20%,
-  60%,
   100% {
     transform: translateY(0);
   }
   40% {
-    transform: translateY(-20px);
-  }
-  80% {
     transform: translateY(-10px);
   }
 }
