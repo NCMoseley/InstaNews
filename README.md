@@ -4,6 +4,7 @@
 # NYT Instanews
 One-page, responsive website that allows a user to filter top news story categories via the New York Times API.
 
+
 ## Introduction
 This page is optimized to run on most modern browsers. It is designed for 320px. 600px, and 1000px + screen resolutions. You can add items to the menu and adjust which topics are returned, if you desire more than the original 6. All of the articles returned are links that will take you away from the InstaTimes homepage and to the full article. 
 
