@@ -1,5 +1,7 @@
 (($ => {
 
+
+
 let $headlines = $('.headlines');
 
   $('#menu').on('change', () => {
@@ -18,7 +20,7 @@ let $headlines = $('.headlines');
 
     const url = `https://api.nytimes.com/svc/topstories/v2/${choice}.json?api-key=4802e2aa376c4a9f96db22b0dc2c01cf`;
 
-
+    
     $.ajax({
       url,
       method: 'GET',
